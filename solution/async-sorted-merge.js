@@ -70,16 +70,6 @@ class MinHeap {
 
 // Print all entries, across all of the *async* sources, in chronological order.
 
-async function asyncMergeSortedLogs(logObjects) {
-  return new Promise(async (resolve) => {
-    try {
-      resolve(sortedDates);
-    } catch (e) {
-      reject(e);
-    }
-  });
-}
-
 module.exports = (logSources, printer) => {
   return new Promise(async (resolve, reject) => {
     try {
